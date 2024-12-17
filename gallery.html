@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <style>
+        body {
+            background-color: #CBDCEB;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 5px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #BCCCDC;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        img, video {
+            width: 300%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover, video:hover {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Back to Main</a>
+        <a href="myself.html">Go to Myself</a>
+        <a href="interest.html">Go to Interest</a>
+        <a href="favorite.html">Go to Favorite</a>
+        <a href="gallery.html">Go to Gallery</a>
+        <a href="family.html">Go to Family</a>
+        <a href="friends.html">Go to Friends</a>
+    </div>
+
+    <h1>My Gallery</h1>
+
+    <table>
+        <tr>
+            <td>
+               <img src="image/family 6.jpg" alt="parents">
+                <div class="caption">Mama & Ayah</div>
+            </td>
+            <td>
+                <img src="image/umbc 1.jpg" alt="me">
+                <div class="caption">Shera Moment</div>
+            </td>
+            <td>
+		<img src="image/family 1.jpg" alt="family">
+                <div class="caption">Along's Graduation !</div>
+            </td>
+        </tr>
+	<tr>
+            <td>
+                <img src="image/family 2.jpg" alt="sibling">
+                <div class="caption">W atok</div>
+            </td>
+            <td>
+		<img src="image/family 8.jpg" alt="sibling">
+                <div class="caption"> melaka </div>
+            </td>
+            <td>
+                 <img src="image/family 7.jpg" alt="raya">
+                <div class="caption">random</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="image/friend 1.jpg" alt="tarian">
+                <div class="caption">jamuan raya</div>
+            </td>
+            <td>
+		<video controls>
+                    <source src="video/outing.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Funfair</div>
+     
+            </td>
+            <td>
+                 <img src="image/friend 4.jpg" alt="raya">
+                <div class="caption">Raya 2023</div>
+            </td>
+        </tr>
+	<tr>
+            <td>
+                     <img src="image/family 4.jpg" alt="Sibling">
+                <div class="caption">2017 </div>
+            </td>
+            <td>
+                    <img src="image/family 5.jpg" alt="Sibling">
+                <div class="caption">sibling</div>
+            </td>
+            <td>
+                    <img src="image/cousin.jpg" alt="Sibling">
+                <div class="caption">cousin</div>
+            </td>
+        </tr>
+	<tr>
+            <td><img src="image/friend 2.jpg" alt="hang out">
+                <div class="caption">Hangout</div>
+            </td>
+            <td>
+		    <img src="image/puding.jpg" alt="umbc">
+                <div class="caption">putri !</div>
+            </td>
+	    <td>
+                    <img src="image/umbc.jpg" alt="raya">
+                <div class="caption">UMBC Moment</div>
+            </td>
+        </tr>	
+    </table>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favorite</title>
+    <style>
+        body {
+            background-color: #CBDCEB;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 5px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #BCCCDC;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-top: 20px;
+            font-size: 2.5em;
+            font-family: 'Georgia', serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        #songs {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .song-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .song-item img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .song-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .song-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            max-width: 35%; 
+            margin: 40px auto; 
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            display: flex; 
+            justify-content: center; 
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider img {
+            width: 70%; 
+            flex: 1 0 100%;
+            border-radius: 10px;
+        }
+
+        .slider-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .slider-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .slider-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Back to Main</a>
+        <a href="myself.html">Go to Myself</a>
+        <a href="interest.html">Go to Interest</a>
+        <a href="favorite.html">Go to Favorite</a>
+        <a href="gallery.html">Go to Gallery</a>
+        <a href="family.html">Go to Family</a>
+        <a href="friends.html">Go to Friends</a>
+    </div>
+
+    <h1>WELCOME TO MY FAVORITE PAGES</h1>
+
+    <div id="songs">
+        <h2>Favorite Songs</h2>
+        <div class="song-grid">
+            <div class="song-item">
+                <a href="https://youtu.be/KMjSuj_LRh0?si=E0_oYooiSIo4Qv88" target="_blank">
+                    <img src="image/gracie abrams.jpg" alt="Mess it up">
+                </a>
+                <div class="song-name">Mess it up by Gracie Abrams</div>
+            </div>
+            <div class="song-item">
+                <a href="https://youtu.be/WsS7xwvyBYQ?si=yG44peQWN7wgnHN4" target="_blank">
+                    <img src="image/the weeknd.jpg" alt="House Of Balloons">
+                </a>
+                <div class="song-name">House Of Balloons by The Weeknd</div>
+            </div>
+            <div class="song-item">
+                <a href="https://youtu.be/s9Qu_JXjbxo?si=6i5NQlVvUSgRVEDF" target="_blank">
+                    <img src="image/isabel larosa.jpg" alt="Haunted">
+                </a>
+                <div class="song-name">Haunted by Isabel Larosa</div>
+            </div>
+            <div class="song-item">
+                <a href="https://youtu.be/HROTJfbtcU4?si=-UPxBe_7eLVcRv8W" target="_blank">
+                    <img src="image/enhypen.jpg" alt="Sacrifice">
+                </a>
+                <div class="song-name">Sacrifice by Enhypen</div>
+            </div>
+            <div class="song-item">
+                <a href="https://youtu.be/mc274HUFhQQ?si=6mWC8e_iDOtbfx0l" target="_blank">
+                    <img src="image/gfriend.jpg" alt="Fallin' light">
+                </a>
+                <div class="song-name">Fallin' light by Gfriend</div>
+            </div>
+            <div class="song-item">
+                <a href="https://youtu.be/zEkg4GBQumc?si=KJjQ9POQR-GiGKWw" target="_blank">
+                    <img src="image/seventeen.jpg" alt="Dont Wanna Cry" style=width;"50%">
+                </a>
+                <div class="song-name">Dont Wanna Cry by Seventeen</div>
+            </div>
+        </div>
+    </div>
+<br>
+    <h2 align="center">Favorite Books</h2>
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img src="image/lelaki astatine.jpg" alt="Book 1">
+            <img src="image/dr alpha male.jpg" alt="Book 2">
+            <img src="image/seseorang untuk aku.jpg" alt="Book 3">
+            <img src="image/dheos.jpg" alt="Book 4">
+            <img src="image/roses.jpg" alt="Book 5">
+        </div>
+
+        <div class="slider-buttons">
+            <button class="slider-button prev">&lt;</button>
+            <button class="slider-button next">&gt;</button>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const totalSlides = slider.children.length;
+        let currentIndex = 0;
+
+        function updateSliderPosition() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
+            updateSliderPosition();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
+            updateSliderPosition();
+        });
+    </script>
+</body>
+</html>

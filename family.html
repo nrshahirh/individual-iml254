@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family</title>
+    <style>
+        body {
+            background-color: #CBDCEB;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sticky Navigation Bar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 5px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #BCCCDC;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkslateblue;
+            margin-top: 20px;
+            font-size: 2.5em;
+            font-family: 'Georgia', serif; /* Changed font for the heading */
+        }
+
+        h3 {
+            text-align: center;
+            color: darkslategray;
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            background: #FFF;
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 15px;
+            border: 1px solid #CCC;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: center;
+        }
+
+        .intro img {
+            width: 40%;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 2px solid green;
+        }
+
+        .family-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .family-item {
+            text-align: center;
+            max-width: 300px;
+            border: 2px solid #CCC;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #FFF;
+        }
+
+        .family-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .family-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .family-item p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #7E9EB1;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #5A8298;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Back to Main</a>
+	<a href="myself.html">Go to Myself</a>
+        <a href="interest.html">Go to interest</a>
+        <a href="favorite.html">Go to favorite</a>
+        <a href="gallery.html">Go to gallery</a>
+        <a href="family.html">Go to family</a>
+        <a href="friends.html">Go to friends</a>
+    </div>
+
+    <h1>WELCOME TO MY FAMILY WEBSITE</h1>
+    <h3>Let me introduce you to the important people in my life. Here's a glimpse of my family members.</h3>
+
+    <div class="intro">
+        <img src="image/my family.jpg" alt="My Family" style="width: 50%; height: auto;"> 
+    </div>
+
+    <!-- Family Gallery Section -->
+    <div class="family-gallery">
+        <div class="family-item">
+	<p>( Ayah )</p>
+            <img src="image/ayah.jpg" alt="Ayah"style="width: 70%; height: auto;">
+            <p>Soli Bin Uda Ahmad</p>
+        </div>
+        <div class="family-item">
+<p>( Mama )</p>
+            <img src="image/mama.jpg" alt="Mama"style="width: 70%; height: auto;">
+            <p>Rosilah Binti Ibrahim</p>
+        </div>
+        <div class="family-item">
+<p>( Along )</p>
+            <img src="image/along.jpg" alt="Along" style="width: 70%; height: auto;">
+            <p>Nurshazwani Binti Soli</p>
+        </div>
+        <div class="family-item">
+<p>( Angah )</p>
+            <img src="image/angah.jpg" alt="Angah" style="width: 70%; height: auto;">
+            <p>Nurshahirah Najwa Binti Soli</p>
+        </div>
+        <div class="family-item">
+<p>( Acik )</p>
+            <img src="image/iqa.jpg" alt="Iqa" style="width: 70%; height: auto;">
+            <p>Nurshafiqah Yusra Binti Soli</p>
+        </div>
+        <div class="family-item">
+<p>( Amcar )</p>
+            <img src="image/amsyar.jpg" alt="Amsyar" style="width: 70%; height: auto;">
+            <p>Muhammad Khalish Amsyar Bin Soli</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">Back to Main</a>
+
+</body>
+</html>

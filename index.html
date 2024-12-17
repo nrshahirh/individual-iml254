@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <style>
+        body {
+            background: url('image/y2k.jpg'); 
+            background-size: cover; 
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        audio {
+            display: none;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05); 
+            filter: brightness(1.1); 
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            text-align: center;
+            line-height: 1.6;
+            margin: 10px 20px;
+        }
+
+        .navigation {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .navigation a {
+            background-color: #444;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .navigation a:hover {
+            background-color: #BCCCDC;
+            transform: scale(1.05);
+        }
+
+        .intro {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 60%;
+            margin: 20px auto;
+            font-family: 'Arial', sans-serif;
+            font-size: 17px;  
+            color: #333; 
+            line-height: 1.8; 
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);  
+        }
+
+        .intro p {
+            margin: 15px 0;
+        }
+
+        .banner img {
+            border-radius: 15px;
+            width: 50%;
+        }
+
+        table.banner {
+            margin-top: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <audio src="audio/hype boy.mp3" autoplay></audio>
+
+    <div class="navigation">
+        <a href="index.html">Back to Main</a>
+        <a href="myself.html">About Me</a>
+        <a href="interest.html">Interest</a>
+        <a href="favorite.html">Favorite</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="family.html">Family</a>
+        <a href="friends.html">Friends</a>
+    </div>
+
+    <table class="banner" align="center">
+        <tr>
+            <td align="center"><img src="image/banner.jpg" alt="Banner"></td>
+        </tr>
+    </table>
+
+    <div class="intro">
+        <p><strong>Hi there!</strong></p>
+        <p>
+            Welcome to this little corner of my world! Here, I share my passions, favorites, and the moments that matter most.
+            This website is a collection of everything I hold dear and wish to share with you.
+        </p>
+        <p>
+            Created with love and creativity, this space reflects who I am. I am Nurshahirah from KCDIM1444A, and this website 
+            is a glimpse into my journey and the things I treasure most.
+        </p>
+        <p>Feel free to explore the following pages to get to know me better:</p>
+        
+        <table border="1" style="width: 70%; border-collapse: collapse; text-align: center; margin: 17px auto;">
+            <thead style="background-color: #f0f0f0;">
+                <tr>
+                    <th>Page</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>About Me</strong></td>
+                    <td>A peek into my story and journey.</td>
+                </tr>
+                <tr>
+                    <td><strong>Interests</strong></td>
+                    <td>Things I'm passionate about.</td>
+                </tr>
+                <tr>
+                    <td><strong>Favorites</strong></td>
+                    <td>Songs, books, and other things I love.</td>
+                </tr>
+                <tr>
+                    <td><strong>Family</strong></td>
+                    <td>The special people who support and inspire me.</td>
+                </tr>
+                <tr>
+                    <td><strong>Friends</strong></td>
+                    <td>The amazing friends who bring joy to my life.</td>
+                </tr>
+                <tr>
+                    <td><strong>Gallery</strong></td>
+                    <td>My collection of favorite moments captured.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            This website isn’t just about me—it’s about connection, sharing, and the joy of discovering the little things that make life meaningful. 
+            I hope you find something here that resonates with you or simply brings a smile to your face!
+        </p>
+        <p><strong>Thank you for stopping by, and happy exploring!</strong></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nurshahirah Najwa</p>
+    </footer>
+</body>
+</html>
